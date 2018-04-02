@@ -1,0 +1,38 @@
+<html ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.25/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.25/angular-route.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#"> Home</a></li>
+        <li><a href="#customer"> Customers</a></li>
+        <li><a href="#product"> Products</a></li>
+      </ul>
+    <div class="pull-right hidden-xs" style="padding: 10px; width: 300px;">
+        <input type="text" placeholder="Type You Message" class="form-control" ng-model="message">
+    </div>
+    </div>
+  </nav>
+    
+  <div>
+    <div ng-view></div>
+  </div>
+  
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <p></p>
+      <p class="text-center">My Footer</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>
